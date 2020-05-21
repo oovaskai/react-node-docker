@@ -1,0 +1,17 @@
+{
+    "name": "node-app",
+    "version": "1.0.0",
+    "private": true,
+    "main": "src/index.js",
+    "scripts": {
+        "start": "NODE_ENV=production node src/index.js",
+        "dev": "NODE_ENV=development nodemon src/index.js"
+    },
+    "dependencies": {
+        "express": "4.17.1",
+        "cors": "2.8.5"
+    },
+    "devDependencies": {
+        "nodemon": "2.0.4"
+    }
+}
