@@ -22,7 +22,7 @@ More info about Node images @ [Docker Hub](https://hub.docker.com/_/node/)
 ```
 $ docker-compose up
 ```
-And browse to: [http:localhost:3000](http:localhost:3000)  
+And browse to: [http://localhost:3000](http:localhost:3000)  
   
 ### Install dependencies by adding them to package.json and rebuild
 ```
@@ -37,7 +37,7 @@ $ docker cp client-dev:/app/build server/.
 $ docker-compose down
 $ docker-compose -f production.yml up
 ```
-And browse to: [http:localhost:3003](http:localhost:3003)
+And browse to: [http://localhost:3003](http:localhost:3003)
 
 ### Stop and remove production server container
 ```
