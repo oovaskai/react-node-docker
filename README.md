@@ -1,22 +1,11 @@
 # React & Node/Express & docker-compose
 
 ## Info
-Set up development environment for React client and Node server without installing node & npm etc. to your host machine.  
+Set up development environment for React client and Node server without installing node and modules to your host machine.  
+  
+By default, images are build from node:latest. More info about Node images @ [Docker Hub](https://hub.docker.com/_/node/)
 
 ## Usage
-
-### Build React dev image with create-react-app
-```
-// create base container 
-$ docker run -it --name cra-base node:latest npx create-react-app app
-
-// commit to a new image:
-$ docker commit cra-base react:dev
-
-// remove base container
-$ docker rm cra-base
-```
-More info about Node images @ [Docker Hub](https://hub.docker.com/_/node/)
 
 ### Start development environment
 ```
@@ -45,4 +34,10 @@ $ docker-compose -f production.yml down
 ```
 
 ### Server locales and timezone
-Check server/Dockerfile
+Set by ENV variables in server/Dockerfile:
+```
+ENV LANG fi-FI.UTF-8
+ENV TIMEZONE Europe/Helsinki
+```
+[Language ISO codes](http://lingoes.net/en/translator/langcode.htm)  
+[Timezones in tz database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
