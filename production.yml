@@ -3,11 +3,11 @@ version: '3.5'
 services:
     server:
         container_name: server-prod
-        build: ./server/.
+        build:
+            context: ./server
+            dockerfile: Dockerfile.prod
+        image: react-node_server:prod
         user: node
-        volumes:
-            - ./server/src:/home/node/src
-            - ./server/build:/home/node/build
         ports:
             - 3003:3001
         networks:

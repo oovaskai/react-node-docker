@@ -1,0 +1,4 @@
+FROM react-node_server:dev
+
+COPY ./build ./build
+COPY ./src ./src

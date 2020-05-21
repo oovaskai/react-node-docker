@@ -3,7 +3,8 @@ version: '3.5'
 services:
     client:
         container_name: client-dev
-        build: ./client/.
+        build: ./client
+        image: react-node_client:dev
         ports:
             - 3000:3000
         volumes:
@@ -19,7 +20,8 @@ services:
 
     server:
         container_name: server-dev
-        build: ./server/.
+        build: ./server
+        image: react-node_server:dev
         user: node
         volumes:
             - ./server/src:/home/node/src
