@@ -1,4 +1,4 @@
-FROM node:14.2
+FROM node:latest
 
 # http://lingoes.net/en/translator/langcode.htm
 ENV LANG fi-FI.UTF-8
