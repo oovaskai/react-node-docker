@@ -3,7 +3,7 @@
 ## Info
 Set up development environment for React client and Node server without installing node and modules to your host machine.  
   
-By default, images are build from node:latest. More info about Node images @ [Docker Hub](https://hub.docker.com/_/node/)
+By default, images are build from node:latest. More info about Node images @ [Docker Hub](https://hub.docker.com/_/node/).
 
 ## Usage
 
